@@ -4,8 +4,7 @@ const { WebhookClient } = require("dialogflow-fulfillment");
 const { Card } = require("dialogflow-fulfillment");
 const BIGQUERY = require("@google-cloud/bigquery");
 const BIGQUERY_CLIENT = new BIGQUERY({
-projectId: "arched-photon-263011" // * PONER VUESTRO ID DEL PROYECTO *
-});
+projectId: "arched-photon-263011" // Checked
 process.env.DEBUG = "dialogflow:debug";
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(
 (request, response) => {
